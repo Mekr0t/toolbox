@@ -3,7 +3,7 @@
 A personal, WinUtil-style installer for Windows, served from your own Linux box.
 
 ```powershell
-irm https://tools.example.com | iex
+irm https://tools.romansafranko.com | iex
 ```
 
 That downloads one PowerShell file, relaunches itself elevated, pulls your
