@@ -1,0 +1,20 @@
+services:
+  caddy:
+    image: caddy:2-alpine
+    container_name: toolbox-caddy
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    environment:
+      TOOLBOX_DOMAIN: ${TOOLBOX_DOMAIN}
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - ../dist:/srv/toolbox:ro
+      - caddy_data:/data
+      - caddy_config:/config
+      - ./logs:/var/log/caddy
+
+volumes:
+  caddy_data:
+  caddy_config:

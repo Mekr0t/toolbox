@@ -1,0 +1,33 @@
+# ---------------------------------------------------------------------------
+#  Toolbox :: Caddy site
+#  Put your domain in server/.env (TOOLBOX_DOMAIN) - Caddy gets HTTPS itself.
+# ---------------------------------------------------------------------------
+
+{$TOOLBOX_DOMAIN} {
+	root * /srv/toolbox
+	encode zstd gzip
+
+	@ps   path *.ps1
+	@json path *.json
+
+	# This has to be a route, because order matters: try_files rewrites the path
+	# first, and only then do the header matchers see it. Outside a route, Caddy
+	# evaluates `header @ps` against the ORIGINAL path, so a request for "/" --
+	# the one the one-liner actually uses -- is served with no Content-Type at
+	# all, and PowerShell falls back to decoding the body as latin-1.
+	route {
+		# irm https://host        -> toolbox.ps1
+		# irm https://host/s/abc  -> /s/abc/toolbox.ps1   (secret-path deployments)
+		try_files {path}/toolbox.ps1 {path}
+
+		header @ps   Content-Type "text/plain; charset=utf-8"
+		header @json Content-Type "application/json; charset=utf-8"
+		header Cache-Control "no-store"
+
+		file_server
+	}
+
+	log {
+		output file /var/log/caddy/toolbox.log
+	}
+}

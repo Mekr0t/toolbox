@@ -1,0 +1,63 @@
+[
+  {
+    "id": "show-file-extensions",
+    "name": "Show file extensions",
+    "category": "Explorer",
+    "default": true,
+    "registry": [
+      { "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced", "name": "HideFileExt", "type": "DWord", "value": 0 }
+    ],
+    "apply": "payloads/restart-explorer.ps1",
+    "undo":  "payloads/restart-explorer.ps1"
+  },
+  {
+    "id": "show-hidden-files",
+    "name": "Show hidden files",
+    "category": "Explorer",
+    "registry": [
+      { "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced", "name": "Hidden", "type": "DWord", "value": 1 }
+    ],
+    "apply": "payloads/restart-explorer.ps1",
+    "undo":  "payloads/restart-explorer.ps1"
+  },
+  {
+    "id": "taskbar-align-left",
+    "name": "Align taskbar left (Win11)",
+    "category": "Explorer",
+    "registry": [
+      { "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced", "name": "TaskbarAl", "type": "DWord", "value": 0 }
+    ],
+    "apply": "payloads/restart-explorer.ps1",
+    "undo":  "payloads/restart-explorer.ps1"
+  },
+  {
+    "id": "hide-taskbar-widgets",
+    "name": "Hide taskbar widgets and chat (Win11)",
+    "category": "Explorer",
+    "registry": [
+      { "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced", "name": "TaskbarDa",   "type": "DWord", "value": 0 },
+      { "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced", "name": "TaskbarMn",   "type": "DWord", "value": 0 }
+    ],
+    "apply": "payloads/restart-explorer.ps1",
+    "undo":  "payloads/restart-explorer.ps1"
+  },
+  {
+    "id": "dark-mode",
+    "name": "Dark mode everywhere",
+    "category": "Appearance",
+    "registry": [
+      { "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Themes\\Personalize", "name": "AppsUseLightTheme",    "type": "DWord", "value": 0 },
+      { "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Themes\\Personalize", "name": "SystemUsesLightTheme", "type": "DWord", "value": 0 }
+    ],
+    "apply": "payloads/restart-explorer.ps1",
+    "undo":  "payloads/restart-explorer.ps1"
+  },
+  {
+    "id": "classic-context-menu",
+    "name": "Classic right-click menu (Win11)",
+    "category": "Explorer",
+    "description": "Brings back the full context menu, no 'Show more options'",
+    "apply": "payloads/classic-context-menu-apply.ps1",
+    "undo":  "payloads/classic-context-menu-undo.ps1"
+  }
+]

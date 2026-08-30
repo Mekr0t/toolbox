@@ -1,0 +1,31 @@
+[
+  {
+    "id": "fresh-install",
+    "name": "Fresh install (my defaults)",
+    "apps":    ["7zip", "powertoys", "notepadplusplus", "everything", "sharex", "firefox", "vscode", "git", "vlc", "bitwarden"],
+    "tweaks":  ["show-file-extensions", "show-hidden-files", "dark-mode", "classic-context-menu",
+                "disable-telemetry", "disable-advertising-id", "disable-web-search", "no-startup-delay"],
+    "scripts": []
+  },
+  {
+    "id": "dev",
+    "name": "Dev machine",
+    "apps":    ["vscode", "git", "windows-terminal", "powershell7", "python3", "nodejs", "docker", "winscp", "dbeaver", "7zip"],
+    "tweaks":  ["show-file-extensions", "show-hidden-files", "classic-context-menu", "no-startup-delay"],
+    "scripts": ["my-dev-setup"]
+  },
+  {
+    "id": "gaming",
+    "name": "Gaming rig",
+    "apps":    ["steam", "epic", "playnite", "discord", "hwinfo", "7zip"],
+    "tweaks":  ["disable-gamedvr", "ultimate-power-plan", "disable-telemetry", "no-startup-delay"],
+    "scripts": []
+  },
+  {
+    "id": "minimal",
+    "name": "Minimal / VM",
+    "apps":    ["7zip", "notepadplusplus", "firefox"],
+    "tweaks":  ["show-file-extensions", "disable-telemetry"],
+    "scripts": []
+  }
+]

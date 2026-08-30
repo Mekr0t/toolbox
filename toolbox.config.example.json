@@ -1,0 +1,8 @@
+{
+  "baseUrl": "https://tools.example.com",
+  "version": "1.0.0",
+  "deploy": {
+    "host": "user@your-server",
+    "path": "/srv/toolbox/dist"
+  }
+}

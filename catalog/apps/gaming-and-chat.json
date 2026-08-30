@@ -1,0 +1,48 @@
+[
+  {
+    "id": "steam",
+    "name": "Steam",
+    "category": "Gaming",
+    "install": [
+      { "type": "winget", "id": "Valve.Steam" },
+      { "type": "choco",  "id": "steam" }
+    ]
+  },
+  {
+    "id": "epic",
+    "name": "Epic Games Launcher",
+    "category": "Gaming",
+    "install": [
+      { "type": "winget", "id": "EpicGames.EpicGamesLauncher" },
+      { "type": "choco",  "id": "epicgameslauncher" }
+    ]
+  },
+  {
+    "id": "playnite",
+    "name": "Playnite",
+    "category": "Gaming",
+    "description": "One library for every launcher",
+    "install": [
+      { "type": "winget", "id": "Playnite.Playnite" },
+      { "type": "choco",  "id": "playnite" }
+    ]
+  },
+  {
+    "id": "discord",
+    "name": "Discord",
+    "category": "Communication",
+    "install": [
+      { "type": "winget", "id": "Discord.Discord" },
+      { "type": "choco",  "id": "discord" }
+    ]
+  },
+  {
+    "id": "telegram",
+    "name": "Telegram",
+    "category": "Communication",
+    "install": [
+      { "type": "winget", "id": "Telegram.TelegramDesktop" },
+      { "type": "choco",  "id": "telegram" }
+    ]
+  }
+]

@@ -1,0 +1,77 @@
+[
+  {
+    "id": "disable-telemetry",
+    "name": "Disable telemetry",
+    "category": "Privacy",
+    "description": "Sets the DataCollection policy to 0 and stops DiagTrack",
+    "registry": [
+      { "path": "HKLM:\\SOFTWARE\\Policies\\Microsoft\\Windows\\DataCollection", "name": "AllowTelemetry", "type": "DWord", "value": 0 }
+    ],
+    "services": [
+      { "name": "DiagTrack",        "startup": "Disabled" },
+      { "name": "dmwappushservice", "startup": "Disabled" }
+    ],
+    "tasks": [
+      "\\Microsoft\\Windows\\Application Experience\\ProgramDataUpdater",
+      "\\Microsoft\\Windows\\Customer Experience Improvement Program\\Consolidator",
+      "\\Microsoft\\Windows\\Customer Experience Improvement Program\\UsbCeip"
+    ]
+  },
+  {
+    "id": "disable-advertising-id",
+    "name": "Disable advertising ID",
+    "category": "Privacy",
+    "description": "Stops apps using an ad ID to profile you across apps",
+    "registry": [
+      { "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\AdvertisingInfo", "name": "Enabled", "type": "DWord", "value": 0 }
+    ]
+  },
+  {
+    "id": "disable-activity-history",
+    "name": "Disable activity history",
+    "category": "Privacy",
+    "description": "No timeline collection or upload",
+    "registry": [
+      { "path": "HKLM:\\SOFTWARE\\Policies\\Microsoft\\Windows\\System", "name": "EnableActivityFeed",      "type": "DWord", "value": 0 },
+      { "path": "HKLM:\\SOFTWARE\\Policies\\Microsoft\\Windows\\System", "name": "PublishUserActivities",   "type": "DWord", "value": 0 },
+      { "path": "HKLM:\\SOFTWARE\\Policies\\Microsoft\\Windows\\System", "name": "UploadUserActivities",    "type": "DWord", "value": 0 }
+    ]
+  },
+  {
+    "id": "disable-tailored-experiences",
+    "name": "Disable tailored experiences",
+    "category": "Privacy",
+    "registry": [
+      { "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Privacy", "name": "TailoredExperiencesWithDiagnosticDataEnabled", "type": "DWord", "value": 0 }
+    ]
+  },
+  {
+    "id": "disable-web-search",
+    "name": "Remove web results from Start search",
+    "category": "Privacy",
+    "description": "Start menu searches your PC only, not Bing",
+    "registry": [
+      { "path": "HKCU:\\Software\\Policies\\Microsoft\\Windows\\Explorer", "name": "DisableSearchBoxSuggestions", "type": "DWord", "value": 1 }
+    ]
+  },
+  {
+    "id": "disable-copilot",
+    "name": "Disable Copilot",
+    "category": "Privacy",
+    "description": "Blocks it by policy. Pair with the Copilot debloat entry to remove the app too.",
+    "registry": [
+      { "path": "HKCU:\\Software\\Policies\\Microsoft\\Windows\\WindowsCopilot", "name": "TurnOffWindowsCopilot", "type": "DWord", "value": 1 },
+      { "path": "HKLM:\\SOFTWARE\\Policies\\Microsoft\\Windows\\WindowsCopilot", "name": "TurnOffWindowsCopilot", "type": "DWord", "value": 1 }
+    ]
+  },
+  {
+    "id": "disable-recall",
+    "name": "Disable Recall",
+    "category": "Privacy",
+    "description": "Stops Windows screenshotting what you do and indexing it",
+    "registry": [
+      { "path": "HKLM:\\SOFTWARE\\Policies\\Microsoft\\Windows\\WindowsAI", "name": "DisableAIDataAnalysis", "type": "DWord", "value": 1 },
+      { "path": "HKCU:\\Software\\Policies\\Microsoft\\Windows\\WindowsAI", "name": "DisableAIDataAnalysis", "type": "DWord", "value": 1 }
+    ]
+  }
+]

@@ -1,0 +1,71 @@
+[
+  {
+    "id": "restart-explorer",
+    "name": "Restart Explorer",
+    "category": "Maintenance",
+    "description": "Applies pending shell changes without logging out",
+    "run": "payloads/restart-explorer.ps1"
+  },
+  {
+    "id": "restore-point",
+    "name": "Create a system restore point",
+    "category": "Maintenance",
+    "description": "Do this before applying tweaks the first time",
+    "run": "payloads/create-restore-point.ps1"
+  },
+  {
+    "id": "clean-temp",
+    "name": "Clean temp folders",
+    "category": "Maintenance",
+    "description": "Empties %TEMP%, Windows\\Temp and the update cache",
+    "run": "payloads/clean-temp.ps1"
+  },
+  {
+    "id": "flush-dns",
+    "name": "Flush DNS + reset network stack",
+    "category": "Maintenance",
+    "run": "payloads/flush-network.ps1"
+  },
+  {
+    "id": "sfc-dism",
+    "name": "Repair system files (SFC + DISM)",
+    "category": "Maintenance",
+    "description": "Takes a while - watch the output pane",
+    "run": "payloads/repair-system.ps1"
+  },
+  {
+    "id": "update-all",
+    "name": "Update every installed app",
+    "category": "Maintenance",
+    "description": "winget upgrade --all",
+    "run": "payloads/update-all.ps1"
+  },
+  {
+    "id": "export-drivers",
+    "name": "Export all drivers",
+    "category": "Backup",
+    "description": "Dump every third-party driver to a folder - do this before a reinstall",
+    "run": "payloads/export-drivers.ps1"
+  },
+  {
+    "id": "winget-export",
+    "name": "Snapshot installed apps",
+    "category": "Backup",
+    "description": "Writes a winget export you can diff against the catalog later",
+    "run": "payloads/winget-export.ps1"
+  },
+  {
+    "id": "install-wsl",
+    "name": "Install WSL + Ubuntu",
+    "category": "Setup",
+    "description": "Needs a reboot to finish",
+    "run": "payloads/install-wsl.ps1"
+  },
+  {
+    "id": "schedule-reapply",
+    "name": "Schedule a monthly re-apply",
+    "category": "Setup",
+    "description": "Task that re-runs a preset every 4 weeks, undoing what Windows Update resets",
+    "run": "payloads/schedule-reapply.ps1"
+  }
+]

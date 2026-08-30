@@ -1,0 +1,43 @@
+[
+  {
+    "id": "ventoy",
+    "name": "Ventoy",
+    "category": "Recovery",
+    "description": "Drop ISOs on a USB stick and boot any of them",
+    "install": [
+      { "type": "winget", "id": "Ventoy.Ventoy" },
+      { "type": "choco",  "id": "ventoy" }
+    ]
+  },
+  {
+    "id": "sysinternals",
+    "name": "Sysinternals Suite",
+    "category": "Recovery",
+    "description": "Autoruns, Process Explorer, TCPView and the rest",
+    "install": [
+      { "type": "winget", "id": "Microsoft.Sysinternals.Suite" },
+      { "type": "choco",  "id": "sysinternals" }
+    ]
+  },
+  {
+    "id": "crystaldiskinfo",
+    "name": "CrystalDiskInfo",
+    "category": "Recovery",
+    "description": "SMART health - tells you a drive is dying before it does",
+    "install": [
+      { "type": "winget", "id": "CrystalDewWorld.CrystalDiskInfo" },
+      { "type": "choco",  "id": "crystaldiskinfo" }
+    ]
+  },
+  {
+    "id": "bcuninstaller",
+    "name": "Bulk Crap Uninstaller",
+    "category": "Recovery",
+    "description": "Removes leftovers the normal uninstaller misses",
+    "detect": { "name": "BCUninstaller|Bulk Crap" },
+    "install": [
+      { "type": "winget", "id": "Klocman.BulkCrapUninstaller" },
+      { "type": "choco",  "id": "bulk-crap-uninstaller" }
+    ]
+  }
+]

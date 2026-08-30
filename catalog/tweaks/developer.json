@@ -1,0 +1,40 @@
+[
+  {
+    "id": "long-paths",
+    "name": "Enable long path support",
+    "category": "Developer",
+    "description": "Lifts the 260-character limit that breaks deep node_modules",
+    "registry": [
+      { "path": "HKLM:\\SYSTEM\\CurrentControlSet\\Control\\FileSystem", "name": "LongPathsEnabled", "type": "DWord", "value": 1 }
+    ]
+  },
+  {
+    "id": "developer-mode",
+    "name": "Enable Developer Mode",
+    "category": "Developer",
+    "description": "Symlinks without elevation - matters for dotfiles and git",
+    "registry": [
+      { "path": "HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\AppModelUnlock", "name": "AllowDevelopmentWithoutDevLicense", "type": "DWord", "value": 1 }
+    ]
+  },
+  {
+    "id": "explorer-this-pc",
+    "name": "Explorer opens This PC",
+    "category": "Explorer",
+    "description": "Instead of Home / Quick access",
+    "registry": [
+      { "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced", "name": "LaunchTo", "type": "DWord", "value": 1 }
+    ],
+    "apply": "payloads/restart-explorer.ps1",
+    "undo":  "payloads/restart-explorer.ps1"
+  },
+  {
+    "id": "no-sticky-keys",
+    "name": "Stop the sticky keys prompt",
+    "category": "Explorer",
+    "description": "No more popup when shift gets held down in a game",
+    "registry": [
+      { "path": "HKCU:\\Control Panel\\Accessibility\\StickyKeys", "name": "Flags", "type": "String", "value": "506" }
+    ]
+  }
+]

@@ -1,0 +1,51 @@
+[
+  {
+    "id": "firefox",
+    "name": "Firefox",
+    "category": "Browsers",
+    "description": "Mozilla Firefox",
+    "link": "https://mozilla.org/firefox",
+    "install": [
+      { "type": "winget", "id": "Mozilla.Firefox" },
+      { "type": "choco",  "id": "firefox" }
+    ]
+  },
+  {
+    "id": "brave",
+    "name": "Brave",
+    "category": "Browsers",
+    "description": "Chromium browser with built-in blocking",
+    "install": [
+      { "type": "winget", "id": "Brave.Brave" },
+      { "type": "choco",  "id": "brave" }
+    ]
+  },
+  {
+    "id": "chrome",
+    "name": "Google Chrome",
+    "category": "Browsers",
+    "install": [
+      { "type": "winget", "id": "Google.Chrome" },
+      { "type": "choco",  "id": "googlechrome" }
+    ]
+  },
+  {
+    "id": "librewolf",
+    "name": "LibreWolf",
+    "category": "Browsers",
+    "description": "Hardened Firefox fork",
+    "install": [
+      { "type": "winget", "id": "LibreWolf.LibreWolf" }
+    ]
+  },
+  {
+    "id": "tor",
+    "name": "Tor Browser",
+    "category": "Browsers",
+    "description": "Privacy-focused web browser",
+    "install": [
+      { "type": "winget", "id": "TorProject.TorBrowser" },
+      { "type": "choco",  "id": "tor-browser" }
+    ]
+  }
+]

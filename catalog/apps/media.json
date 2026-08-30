@@ -1,0 +1,90 @@
+[
+  {
+    "id": "vlc",
+    "name": "VLC",
+    "category": "Media",
+    "install": [
+      { "type": "winget", "id": "VideoLAN.VLC" },
+      { "type": "choco",  "id": "vlc" }
+    ]
+  },
+  {
+    "id": "mpv",
+    "name": "mpv",
+    "category": "Media",
+    "description": "Minimal, keyboard-driven video player",
+    "install": [
+      { "type": "winget", "id": "mpv.net" },
+      { "type": "scoop",  "id": "mpv" }
+    ]
+  },
+  {
+    "id": "obs",
+    "name": "OBS Studio",
+    "category": "Media",
+    "install": [
+      { "type": "winget", "id": "OBSProject.OBSStudio" },
+      { "type": "choco",  "id": "obs-studio" }
+    ]
+  },
+  {
+    "id": "spotify",
+    "name": "Spotify",
+    "category": "Media",
+    "install": [
+      { "type": "winget", "id": "Spotify.Spotify" },
+      { "type": "choco",  "id": "spotify" }
+    ]
+  },
+  {
+    "id": "gimp",
+    "name": "GIMP",
+    "category": "Media",
+    "install": [
+      { "type": "winget", "id": "GIMP.GIMP" },
+      { "type": "choco",  "id": "gimp" }
+    ]
+  },
+  {
+    "id": "handbrake",
+    "name": "HandBrake",
+    "category": "Media",
+    "description": "Video transcoder",
+    "install": [
+      { "type": "winget", "id": "HandBrake.HandBrake" },
+      { "type": "choco",  "id": "handbrake" }
+    ]
+  },
+  {
+    "id": "yt-dlp",
+    "name": "yt-dlp",
+    "category": "Media",
+    "description": "Download video from just about anywhere",
+    "detect": { "command": "yt-dlp" },
+    "install": [
+      { "type": "winget", "id": "yt-dlp.yt-dlp" },
+      { "type": "scoop",  "id": "yt-dlp" }
+    ]
+  },
+  {
+    "id": "ffmpeg",
+    "name": "FFmpeg",
+    "category": "Media",
+    "description": "The tool everything else shells out to",
+    "detect": { "command": "ffmpeg" },
+    "install": [
+      { "type": "winget", "id": "Gyan.FFmpeg" },
+      { "type": "choco",  "id": "ffmpeg" }
+    ]
+  },
+  {
+    "id": "inkscape",
+    "name": "Inkscape",
+    "category": "Media",
+    "description": "Vector editing - the half GIMP does not do",
+    "install": [
+      { "type": "winget", "id": "Inkscape.Inkscape" },
+      { "type": "choco",  "id": "inkscape" }
+    ]
+  }
+]

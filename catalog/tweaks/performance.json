@@ -1,0 +1,46 @@
+[
+  {
+    "id": "disable-gamedvr",
+    "name": "Disable Game DVR / background recording",
+    "category": "Performance",
+    "description": "Removes the background capture overhead from games",
+    "registry": [
+      { "path": "HKCU:\\System\\GameConfigStore",                                        "name": "GameDVR_Enabled",     "type": "DWord", "value": 0 },
+      { "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\GameDVR",          "name": "AppCaptureEnabled",   "type": "DWord", "value": 0 },
+      { "path": "HKLM:\\SOFTWARE\\Policies\\Microsoft\\Windows\\GameDVR",                "name": "AllowGameDVR",        "type": "DWord", "value": 0 }
+    ]
+  },
+  {
+    "id": "no-startup-delay",
+    "name": "Remove startup app delay",
+    "category": "Performance",
+    "description": "Startup programs launch immediately instead of after ~10s",
+    "registry": [
+      { "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Serialize", "name": "StartupDelayInMSec", "type": "DWord", "value": 0 }
+    ]
+  },
+  {
+    "id": "faster-menus",
+    "name": "Faster menu animations",
+    "category": "Performance",
+    "registry": [
+      { "path": "HKCU:\\Control Panel\\Desktop", "name": "MenuShowDelay", "type": "String", "value": "50" }
+    ]
+  },
+  {
+    "id": "ultimate-power-plan",
+    "name": "Enable Ultimate Performance power plan",
+    "category": "Performance",
+    "description": "Adds and activates the hidden ultimate performance plan (desktops)",
+    "apply": "payloads/power-ultimate-apply.ps1",
+    "undo":  "payloads/power-ultimate-undo.ps1"
+  },
+  {
+    "id": "disable-hibernation",
+    "name": "Disable hibernation",
+    "category": "Performance",
+    "description": "Frees hiberfil.sys (several GB). Also disables fast startup.",
+    "apply": "payloads/hibernation-off.ps1",
+    "undo":  "payloads/hibernation-on.ps1"
+  }
+]

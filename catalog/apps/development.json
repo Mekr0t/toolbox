@@ -1,0 +1,109 @@
+[
+  {
+    "id": "vscode",
+    "name": "Visual Studio Code",
+    "category": "Development",
+    "description": "Microsoft's editor",
+    "install": [
+      { "type": "winget", "id": "Microsoft.VisualStudioCode", "args": "--scope machine" },
+      { "type": "choco",  "id": "vscode" }
+    ]
+  },
+  {
+    "id": "git",
+    "name": "Git",
+    "category": "Development",
+    "install": [
+      { "type": "winget", "id": "Git.Git" },
+      { "type": "choco",  "id": "git" }
+    ]
+  },
+  {
+    "id": "windows-terminal",
+    "name": "Windows Terminal",
+    "category": "Development",
+    "detect": { "appx": "Microsoft.WindowsTerminal" },
+    "install": [
+      { "type": "winget", "id": "Microsoft.WindowsTerminal" },
+      { "type": "choco",  "id": "microsoft-windows-terminal" }
+    ]
+  },
+  {
+    "id": "powershell7",
+    "name": "PowerShell 7",
+    "category": "Development",
+    "description": "Modern cross-platform PowerShell",
+    "install": [
+      { "type": "winget", "id": "Microsoft.PowerShell" },
+      { "type": "choco",  "id": "powershell-core" }
+    ]
+  },
+  {
+    "id": "python3",
+    "name": "Python 3.12",
+    "category": "Development",
+    "detect": { "name": "^Python 3" },
+    "install": [
+      { "type": "winget", "id": "Python.Python.3.12" },
+      { "type": "choco",  "id": "python" }
+    ]
+  },
+  {
+    "id": "nodejs",
+    "name": "Node.js LTS",
+    "category": "Development",
+    "detect": { "name": "^Node" },
+    "install": [
+      { "type": "winget", "id": "OpenJS.NodeJS.LTS" },
+      { "type": "choco",  "id": "nodejs-lts" }
+    ]
+  },
+  {
+    "id": "docker",
+    "name": "Docker Desktop",
+    "category": "Development",
+    "install": [
+      { "type": "winget", "id": "Docker.DockerDesktop" },
+      { "type": "choco",  "id": "docker-desktop" }
+    ]
+  },
+  {
+    "id": "winscp",
+    "name": "WinSCP",
+    "category": "Development",
+    "description": "SFTP/SCP client - handy for your Linux box",
+    "install": [
+      { "type": "winget", "id": "WinSCP.WinSCP" },
+      { "type": "choco",  "id": "winscp" }
+    ]
+  },
+  {
+    "id": "dbeaver",
+    "name": "DBeaver",
+    "category": "Development",
+    "description": "Universal database client",
+    "install": [
+      { "type": "winget", "id": "DBeaverCorp.DBeaverCommunity" },
+      { "type": "choco",  "id": "dbeaver" }
+    ]
+  },
+  {
+    "id": "neovim",
+    "name": "Neovim",
+    "category": "Development",
+    "detect": { "command": "nvim" },
+    "install": [
+      { "type": "winget", "id": "Neovim.Neovim" },
+      { "type": "choco",  "id": "neovim" }
+    ]
+  },
+  {
+    "id": "bruno",
+    "name": "Bruno",
+    "category": "Development",
+    "description": "API client - Postman without the account",
+    "install": [
+      { "type": "winget", "id": "Bruno.Bruno" }
+    ]
+  }
+]

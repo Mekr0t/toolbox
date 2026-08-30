@@ -1,0 +1,9 @@
+[
+  {
+    "id": "my-dev-setup",
+    "name": "My dev environment bootstrap",
+    "category": "Personal",
+    "description": "Example: git identity, SSH key, PowerShell profile, folders",
+    "run": "payloads/my-dev-setup.ps1"
+  }
+]

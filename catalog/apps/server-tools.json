@@ -1,0 +1,41 @@
+[
+  {
+    "id": "tailscale",
+    "name": "Tailscale",
+    "category": "Server",
+    "description": "WireGuard mesh VPN - reach your server from anywhere",
+    "install": [
+      { "type": "winget", "id": "Tailscale.Tailscale" },
+      { "type": "choco",  "id": "tailscale" }
+    ]
+  },
+  {
+    "id": "winfsp",
+    "name": "WinFsp",
+    "category": "Server",
+    "description": "Filesystem driver SSHFS-Win needs - install this first",
+    "install": [
+      { "type": "winget", "id": "WinFsp.WinFsp" }
+    ]
+  },
+  {
+    "id": "sshfs-win",
+    "name": "SSHFS-Win",
+    "category": "Server",
+    "description": "Mount a server directory as a drive letter (needs WinFsp)",
+    "install": [
+      { "type": "winget", "id": "SSHFS-Win.SSHFS-Win" }
+    ]
+  },
+  {
+    "id": "gh",
+    "name": "GitHub CLI",
+    "category": "Server",
+    "description": "gh repo clone, gh pr - and auth without a password prompt",
+    "detect": { "command": "gh" },
+    "install": [
+      { "type": "winget", "id": "GitHub.cli" },
+      { "type": "choco",  "id": "gh" }
+    ]
+  }
+]

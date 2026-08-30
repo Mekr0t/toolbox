@@ -1,0 +1,109 @@
+[
+  {
+    "id": "7zip",
+    "name": "7-Zip",
+    "category": "Utilities",
+    "default": true,
+    "install": [
+      { "type": "winget", "id": "7zip.7zip" },
+      { "type": "choco",  "id": "7zip" }
+    ]
+  },
+  {
+    "id": "powertoys",
+    "name": "PowerToys",
+    "category": "Utilities",
+    "description": "FancyZones, PowerRename, Run, and friends",
+    "install": [
+      { "type": "winget", "id": "Microsoft.PowerToys" },
+      { "type": "choco",  "id": "powertoys" }
+    ]
+  },
+  {
+    "id": "notepadplusplus",
+    "name": "Notepad++",
+    "category": "Utilities",
+    "install": [
+      { "type": "winget", "id": "Notepad++.Notepad++" },
+      { "type": "choco",  "id": "notepadplusplus" }
+    ]
+  },
+  {
+    "id": "everything",
+    "name": "Everything",
+    "category": "Utilities",
+    "description": "Instant filename search",
+    "install": [
+      { "type": "winget", "id": "voidtools.Everything" },
+      { "type": "choco",  "id": "everything" }
+    ]
+  },
+  {
+    "id": "sharex",
+    "name": "ShareX",
+    "category": "Utilities",
+    "description": "Screenshots and screen recording",
+    "install": [
+      { "type": "winget", "id": "ShareX.ShareX" },
+      { "type": "choco",  "id": "sharex" }
+    ]
+  },
+  {
+    "id": "bitwarden",
+    "name": "Bitwarden",
+    "category": "Utilities",
+    "install": [
+      { "type": "winget", "id": "Bitwarden.Bitwarden" },
+      { "type": "choco",  "id": "bitwarden" }
+    ]
+  },
+  {
+    "id": "qbittorrent",
+    "name": "qBittorrent",
+    "category": "Utilities",
+    "install": [
+      { "type": "winget", "id": "qBittorrent.qBittorrent" },
+      { "type": "choco",  "id": "qbittorrent" }
+    ]
+  },
+  {
+    "id": "rufus",
+    "name": "Rufus",
+    "category": "Utilities",
+    "description": "Bootable USB writer",
+    "install": [
+      { "type": "winget", "id": "Rufus.Rufus" },
+      { "type": "choco",  "id": "rufus" }
+    ]
+  },
+  {
+    "id": "hwinfo",
+    "name": "HWiNFO",
+    "category": "Utilities",
+    "description": "Hardware sensors and reporting",
+    "install": [
+      { "type": "winget", "id": "REALiX.HWiNFO" },
+      { "type": "choco",  "id": "hwinfo" }
+    ]
+  },
+  {
+    "id": "windirstat",
+    "name": "WinDirStat",
+    "category": "Utilities",
+    "description": "Find what ate your disk",
+    "install": [
+      { "type": "winget", "id": "WinDirStat.WinDirStat" },
+      { "type": "choco",  "id": "windirstat" }
+    ]
+  },
+  {
+    "id": "quicklook",
+    "name": "QuickLook",
+    "category": "Utilities",
+    "description": "Press space in Explorer to preview a file",
+    "install": [
+      { "type": "winget", "id": "QL-Win.QuickLook" },
+      { "type": "choco",  "id": "quicklook" }
+    ]
+  }
+]

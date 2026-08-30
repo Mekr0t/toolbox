@@ -1,0 +1,11 @@
+[
+  {
+    "id": "no-forced-restart",
+    "name": "Stop Windows Update forcing a restart",
+    "category": "Updates",
+    "description": "Windows still updates, it just will not reboot while you are signed in",
+    "registry": [
+      { "path": "HKLM:\\SOFTWARE\\Policies\\Microsoft\\Windows\\WindowsUpdate\\AU", "name": "NoAutoRebootWithLoggedOnUsers", "type": "DWord", "value": 1 }
+    ]
+  }
+]

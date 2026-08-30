@@ -1,0 +1,74 @@
+[
+  {
+    "id": "bloat-bing",
+    "name": "Bing News, Weather and Search",
+    "category": "Debloat",
+    "description": "Removal only - reinstall from the Microsoft Store if you miss it",
+    "detect": { "appx": "Microsoft.BingNews" },
+    "uninstall": [ { "type": "appx", "id": "Microsoft.Bing*" } ]
+  },
+  {
+    "id": "bloat-xbox",
+    "name": "Xbox apps",
+    "category": "Debloat",
+    "description": "Also removes Game Bar, so Win+G stops working. Removal only.",
+    "detect": { "appx": "Microsoft.XboxGamingOverlay" },
+    "uninstall": [ { "type": "appx", "id": "Microsoft.Xbox*" } ]
+  },
+  {
+    "id": "bloat-solitaire",
+    "name": "Solitaire Collection",
+    "category": "Debloat",
+    "description": "Removal only",
+    "detect": { "appx": "Microsoft.MicrosoftSolitaireCollection" },
+    "uninstall": [ { "type": "appx", "id": "Microsoft.MicrosoftSolitaireCollection" } ]
+  },
+  {
+    "id": "bloat-clipchamp",
+    "name": "Clipchamp",
+    "category": "Debloat",
+    "description": "Removal only",
+    "detect": { "appx": "Clipchamp.Clipchamp" },
+    "uninstall": [ { "type": "appx", "id": "Clipchamp.Clipchamp" } ]
+  },
+  {
+    "id": "bloat-teams",
+    "name": "Teams (preinstalled Chat)",
+    "category": "Debloat",
+    "description": "The preinstalled personal Chat, not a Teams you installed yourself",
+    "detect": { "appx": "MicrosoftTeams" },
+    "uninstall": [ { "type": "appx", "id": "MicrosoftTeams" } ]
+  },
+  {
+    "id": "bloat-copilot",
+    "name": "Copilot",
+    "category": "Debloat",
+    "description": "Pairs with the 'Disable Copilot' tweak, which also blocks it by policy",
+    "detect": { "appx": "Microsoft.Copilot" },
+    "uninstall": [ { "type": "appx", "id": "Microsoft.Copilot" } ]
+  },
+  {
+    "id": "bloat-phonelink",
+    "name": "Phone Link",
+    "category": "Debloat",
+    "description": "Removal only",
+    "detect": { "appx": "Microsoft.YourPhone" },
+    "uninstall": [ { "type": "appx", "id": "Microsoft.YourPhone" } ]
+  },
+  {
+    "id": "bloat-maps",
+    "name": "Maps",
+    "category": "Debloat",
+    "description": "Removal only",
+    "detect": { "appx": "Microsoft.WindowsMaps" },
+    "uninstall": [ { "type": "appx", "id": "Microsoft.WindowsMaps" } ]
+  },
+  {
+    "id": "bloat-officehub",
+    "name": "Office hub stub",
+    "category": "Debloat",
+    "description": "The 'get Office' shortcut tile, not an Office install you paid for",
+    "detect": { "appx": "Microsoft.MicrosoftOfficeHub" },
+    "uninstall": [ { "type": "appx", "id": "Microsoft.MicrosoftOfficeHub" } ]
+  }
+]

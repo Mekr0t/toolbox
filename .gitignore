@@ -1,0 +1,8 @@
+# your own settings - copy from the .example files
+toolbox.config.json
+server/.env
+
+# generated
+dist/
+server/logs/
+*.log
