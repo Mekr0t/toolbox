@@ -27,5 +27,19 @@
     "apps":    ["7zip", "notepadplusplus", "firefox"],
     "tweaks":  ["show-file-extensions", "disable-telemetry"],
     "scripts": []
+  },
+  {
+    "id": "roblox-workbench-vm",
+    "name": "Roblox Workbench VM (T1.3)",
+    "apps": [
+      "roblox-studio",
+      "python314",
+      "git",
+      "gh",
+      "vscode",
+      "claude-code"
+    ],
+    "tweaks": [],
+    "scripts": []
   }
 ]

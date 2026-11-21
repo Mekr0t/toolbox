@@ -1,0 +1,38 @@
+[
+  {
+    "id": "roblox-studio",
+    "name": "Roblox Studio",
+    "category": "Development",
+    "install": [
+      {
+        "type": "winget",
+        "id": "Roblox.RobloxStudio"
+      }
+    ]
+  },
+  {
+    "id": "python314",
+    "name": "Python 3.14",
+    "category": "Development",
+    "install": [
+      {
+        "type": "winget",
+        "id": "Python.Python.3.14"
+      }
+    ]
+  },
+  {
+    "id": "claude-code",
+    "name": "Claude Code",
+    "category": "Development",
+    "detect": {
+      "command": "claude"
+    },
+    "install": [
+      {
+        "type": "winget",
+        "id": "Anthropic.ClaudeCode"
+      }
+    ]
+  }
+]
