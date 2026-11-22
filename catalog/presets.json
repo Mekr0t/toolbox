@@ -32,6 +32,7 @@
     "id": "roblox-workbench-vm",
     "name": "Roblox Workbench VM (T1.3)",
     "apps": [
+      "vcredist-x64",
       "roblox-studio",
       "python314",
       "git",

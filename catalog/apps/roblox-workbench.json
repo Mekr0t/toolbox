@@ -34,5 +34,19 @@
         "id": "Anthropic.ClaudeCode"
       }
     ]
+  },
+  {
+    "id": "vcredist-x64",
+    "name": "Visual C++ 2015-2022 Redistributable (x64)",
+    "category": "Development",
+    "detect": {
+      "path": "C:/Windows/System32/vcruntime140_1.dll"
+    },
+    "install": [
+      {
+        "type": "winget",
+        "id": "Microsoft.VCRedist.2015+.x64"
+      }
+    ]
   }
 ]
